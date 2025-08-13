@@ -44,7 +44,7 @@ function addBookmarkToStorage(name,link){
         link
     });
     localStorage.setItem("bookmarkKey",JSON.stringify(bookmarks));
-    console.log(bookmarks);
+    
 }
 
 function addBookmarkToUi(){
@@ -75,7 +75,7 @@ function removeBookmarkList(buttonId){
        getBookmarkData = getBookmarkData.filter(bookMarkObj => bookMarkObj.id !== buttonId);
        localStorage.setItem("bookmarkKey",JSON.stringify(getBookmarkData));
        addBookmarkToUi();
-       console.log(bookmarkList.children.length);
+      
 
 
        if(bookmarkList.offsetHeight <= 10){
