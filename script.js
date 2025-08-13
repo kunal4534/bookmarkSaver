@@ -16,7 +16,7 @@ function checkInput(e){
    if(name == "" || link == ""){
     alert("please fill both fileds....");
    }else{
-     if((!name.startsWith("http://")) && (!link.startsWith("https://"))){
+     if((!link.startsWith("http://")) && (!link.startsWith("https://"))){
         alert("please enter a valid URL with http:// or https://");
         bookmarkLink.value = "";
         bookmarkName.value = "";
